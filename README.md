@@ -306,6 +306,33 @@
             cursor: pointer;
         }
 
+        /* Image Gallery */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery-item {
+            border: 2px solid #00ff88;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .mobile-menu-btn {
@@ -383,7 +410,7 @@
             <div class="hero">
                 <h2>Welcome to GTAMEN</h2>
                 <p>The premier GTA V PS5 community dedicated to GTAMEN content, epic movie productions, and unforgettable events. Join our thriving community today!</p>
-                <button onclick="showPage('discord')" class="cta-button">Join Discord</button>
+                <a href="https://discord.gg/9GSj6BGACr" target="_blank" class="cta-button">Join Discord</a>
             </div>
 
             <div class="grid">
@@ -500,31 +527,49 @@
                         <p style="color: #00ff88;">✓ Voice Channels</p>
                     </div>
                 </div>
-                <a href="#" class="cta-button" style="margin-top: 20px;">Join Discord Server</a>
+                <a href="https://discord.gg/9GSj6BGACr" target="_blank" class="cta-button" style="margin-top: 20px;">Join Discord Server</a>
             </div>
         </div>
 
         <!-- LSN Page -->
         <div id="lsn" class="page-section">
-            <h2 class="page-title">Los Santos Network (LSN)</h2>
+            <h2 class="page-title">Los Santos Nations (LSN)</h2>
             <div class="card">
-                <h3>Your Source for Los Santos News</h3>
-                <p>Stay informed with the Los Santos Network - your go-to source for all things happening in our GTA V community. From breaking news to event coverage, LSN keeps you connected.</p>
-                <p style="margin-top: 15px;">Follow LSN for exclusive content, interviews with community members, and live coverage of major events!</p>
+                <h3>Elite Security Services</h3>
+                <p>Los Santos Nations is our premier security division providing professional protection services throughout Los Santos. We offer elite security details, VIP protection, and event security for the GTAMEN community.</p>
+                <p style="margin-top: 15px;">Our trained security personnel ensure safety and professionalism at all community events and operations.</p>
             </div>
 
             <div class="grid" style="margin-top: 30px;">
                 <div class="card">
-                    <h3>📰 News Coverage</h3>
-                    <p>Get the latest updates on community events, movie releases, and GTAMEN activities.</p>
+                    <h3>🛡️ VIP Protection</h3>
+                    <p>Professional close protection services for high-profile community members and special guests.</p>
                 </div>
                 <div class="card">
-                    <h3>🎤 Interviews</h3>
-                    <p>Exclusive interviews with community leaders, movie directors, and active members.</p>
+                    <h3>🚨 Event Security</h3>
+                    <p>Comprehensive security coverage for car meets, movie premieres, and community gatherings.</p>
                 </div>
                 <div class="card">
-                    <h3>📹 Live Events</h3>
-                    <p>Live streaming and coverage of major GTAMEN events and premieres.</p>
+                    <h3>⭐ Elite Training</h3>
+                    <p>All LSN security personnel undergo rigorous training to maintain the highest standards of professionalism.</p>
+                </div>
+            </div>
+
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="https://i.postimg.cc/xThBhVVF/IMG_1695.jpg" alt="LSN Security">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.postimg.cc/tCYLBC8b/IMG_1694.jpg" alt="LSN Operations">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.postimg.cc/WbCxCcPc/IMG_1689.jpg" alt="LSN Team">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.postimg.cc/8P9x9gVS/IMG_1688.jpg" alt="LSN Service">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.postimg.cc/HsRFR1CY/IMG_1686.jpg" alt="LSN Detail">
                 </div>
             </div>
         </div>
