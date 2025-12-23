@@ -338,6 +338,57 @@
             display: block;
         }
 
+        /* Driver Cards */
+        .driver-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .driver-card {
+            background-color: #1a1a1a;
+            border: 2px solid #00ff88;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .driver-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+        }
+
+        .driver-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #00ff88;
+        }
+
+        .driver-card h4 {
+            color: #00ff88;
+            font-size: 1.3em;
+            padding: 15px;
+            margin: 0;
+        }
+
+        .open-spot {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #0a3a2a 100%);
+            border-bottom: 2px solid #00ff88;
+        }
+
+        .open-spot span {
+            font-size: 1.5em;
+            color: #00ff88;
+            font-weight: bold;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .mobile-menu-btn {
@@ -395,6 +446,7 @@
                     <li><button onclick="showPage('about')" class="nav-btn" data-page="about">About Us</button></li>
                     <li><button onclick="showPage('movies')" class="nav-btn" data-page="movies">Movies</button></li>
                     <li><button onclick="showPage('events')" class="nav-btn" data-page="events">Events</button></li>
+                    <li><button onclick="showPage('racing')" class="nav-btn" data-page="racing">Racing</button></li>
                     <li><button onclick="showPage('discord')" class="nav-btn" data-page="discord">Discord</button></li>
                     <li><button onclick="showPage('lsn')" class="nav-btn" data-page="lsn">LSN</button></li>
                     <li><button onclick="showPage('summit')" class="nav-btn" data-page="summit">Summit</button></li>
@@ -508,6 +560,65 @@
                 <div class="card">
                     <h3>🎯 Get Involved</h3>
                     <p>Want to help organize events? Join our Discord to share your ideas and volunteer for event planning roles.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Racing Page -->
+        <div id="racing" class="page-section">
+            <h2 class="page-title">GTAMEN Racing</h2>
+            
+            <div class="card" style="text-align: center; padding: 40px;">
+                <img src="https://i.postimg.cc/J0st7H4J/IMG_1707.png" alt="Gran Turismo 7 Logo" style="max-width: 400px; height: auto; margin: 0 auto 20px; display: block;">
+                <h3>Gran Turismo 7 Racing Team</h3>
+                <p style="font-size: 1.1em; color: #aaa; margin-top: 15px;">Our elite racing division competing in GT7. Precision, speed, and teamwork define our drivers.</p>
+            </div>
+
+            <h3 style="margin-top: 50px; margin-bottom: 20px; font-size: 2em; color: #00ff88; text-align: center;">Our Drivers</h3>
+            <div class="driver-grid">
+                <div class="driver-card">
+                    <img src="https://i.postimg.cc/T2ND8fY2/IMG_1706.jpg" alt="Koomzy">
+                    <h4>Koomzy</h4>
+                </div>
+                <div class="driver-card">
+                    <img src="https://i.postimg.cc/L4Q1d26m/IMG_1704.png" alt="Mental">
+                    <h4>Mental</h4>
+                </div>
+                <div class="driver-card">
+                    <img src="https://i.postimg.cc/ryZr6MFV/IMG_1705.png" alt="Cobra_ry">
+                    <h4>Cobra_ry</h4>
+                </div>
+                <div class="driver-card">
+                    <img src="https://i.postimg.cc/XN1CM477/IMG_1703.png" alt="NURB_DEMOLISHER">
+                    <h4>NURB_DEMOLISHER</h4>
+                </div>
+                <div class="driver-card">
+                    <img src="https://i.postimg.cc/SQ1M0kNs/IMG_1702.png" alt="FAZE_PENI3">
+                    <h4>FAZE_PENI3</h4>
+                </div>
+                <div class="driver-card">
+                    <div class="open-spot">
+                        <span>SPOT OPEN</span>
+                    </div>
+                    <h4>Join Our Team</h4>
+                </div>
+            </div>
+
+            <div class="card" style="margin-top: 50px; text-align: center; padding: 40px; background: linear-gradient(135deg, #1a1a1a 0%, #0a2a3a 100%);">
+                <img src="https://i.postimg.cc/bwpDkJm5/IMG_1708.png" alt="FIA Logo" style="max-width: 300px; height: auto; margin: 0 auto 20px; display: block;">
+                <h3 style="font-size: 2.2em; margin-bottom: 20px;">FIA Competition</h3>
+                <p style="font-size: 1.1em; color: #aaa; margin-bottom: 30px;">Our elite drivers competing at the highest level of Gran Turismo 7 motorsport.</p>
+                
+                <h4 style="color: #00ff88; font-size: 1.5em; margin-bottom: 20px;">FIA Drivers</h4>
+                <div class="driver-grid" style="max-width: 600px; margin: 0 auto;">
+                    <div class="driver-card">
+                        <img src="https://i.postimg.cc/T2ND8fY2/IMG_1706.jpg" alt="Koomzy">
+                        <h4>Koomzy</h4>
+                    </div>
+                    <div class="driver-card">
+                        <img src="https://i.postimg.cc/L4Q1d26m/IMG_1704.png" alt="Mental">
+                        <h4>Mental</h4>
+                    </div>
                 </div>
             </div>
         </div>
