@@ -42,6 +42,11 @@
             gap: 15px;
         }
 
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+
         .logo h1 {
             font-size: 2em;
             color: #00ff88;
@@ -380,6 +385,7 @@
     <header>
         <div class="header-content">
             <div class="logo">
+                <img src="https://i.postimg.cc/YqhJdqTB/IMG_1697.png" alt="GTAMEN Logo">
                 <h1>GTAMEN</h1>
             </div>
             <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
@@ -534,10 +540,12 @@
         <!-- LSN Page -->
         <div id="lsn" class="page-section">
             <h2 class="page-title">Los Santos Nations (LSN)</h2>
-            <div class="card">
+            <div class="card" style="text-align: center;">
+                <img src="https://i.postimg.cc/6QqcXYx2/IMG_1701.png" alt="LSN Logo" style="max-width: 300px; height: auto; margin: 0 auto 20px; display: block;">
                 <h3>Elite Security Services</h3>
                 <p>Los Santos Nations is our premier security division providing professional protection services throughout Los Santos. We offer elite security details, VIP protection, and event security for the GTAMEN community.</p>
                 <p style="margin-top: 15px;">Our trained security personnel ensure safety and professionalism at all community events and operations.</p>
+                <a href="https://discord.gg/fFTvRURxzd" target="_blank" class="cta-button" style="margin-top: 20px;">Join LSN Discord</a>
             </div>
 
             <div class="grid" style="margin-top: 30px;">
