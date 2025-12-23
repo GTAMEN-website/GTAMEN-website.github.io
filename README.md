@@ -605,6 +605,33 @@
                     <p>Display your custom builds, rare finds, and meticulously tuned vehicles to the community.</p>
                 </div>
             </div>
+
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="https://i.postimg.cc/L6nrx6GM/IMG_1696.jpg" alt="Summit Car Meet">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.postimg.cc/KvwCwhhW/IMG_1693.jpg" alt="Summit Showcase">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.postimg.cc/NfSZSvvV/IMG_1692.jpg" alt="Summit Cars">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.postimg.cc/65gFgxxD/IMG_1691.jpg" alt="Summit Cruise">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.postimg.cc/9FKsKHHK/IMG_1690.jpg" alt="Summit Lineup">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.postimg.cc/152b21ZP/IMG_1687.jpg" alt="Summit Collection">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.postimg.cc/ncgNgftH/IMG_1685.jpg" alt="Summit Event">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.postimg.cc/9FKsKHjX/IMG_1684.jpg" alt="Summit Gathering">
+                </div>
+            </div>
         </div>
     </main>
 
