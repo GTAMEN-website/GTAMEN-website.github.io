@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -362,6 +361,7 @@
                     <li><button onclick="showPage('home')" class="nav-btn active" data-page="home">Home</button></li>
                     <li><button onclick="showPage('about')" class="nav-btn" data-page="about">About Us</button></li>
                     <li><button onclick="showPage('movies')" class="nav-btn" data-page="movies">Movies</button></li>
+                    <li><button onclick="showPage('events')" class="nav-btn" data-page="events">Events</button></li>
                     <li><button onclick="showPage('discord')" class="nav-btn" data-page="discord">Discord</button></li>
                     <li><button onclick="showPage('lsn')" class="nav-btn" data-page="lsn">LSN</button></li>
                     <li><button onclick="showPage('summit')" class="nav-btn" data-page="summit">Summit</button></li>
@@ -393,11 +393,11 @@
                 </div>
                 <div class="card">
                     <h3>🎮 Active Community</h3>
-                    <p>Join daily sessions, organized events, and connect with fellow GTAMEN members on PS5 GTA V.</p>
+                    <p>Join daily sessions, organized activities, and connect with fellow GTAMEN members on PS5 GTA V.</p>
                 </div>
                 <div class="card">
-                    <h3>🏆 Exclusive Events</h3>
-                    <p>Participate in weekly car meets, monthly summits, and special community gatherings.</p>
+                    <h3>🚗 Car Meets</h3>
+                    <p>Participate in Summit car meets, showcases, and cruises through Los Santos with the crew.</p>
                 </div>
             </div>
         </div>
@@ -455,32 +455,27 @@
 
         <!-- Events Page -->
         <div id="events" class="page-section">
-            <h2 class="page-title">Upcoming Events</h2>
-            <div class="grid">
-                <div class="card event-card">
-                    <span class="event-date">This Week</span>
-                    <h3>Weekly Car Meet</h3>
-                    <p>Join us for our weekly car showcase and cruise through Los Santos. Show off your rides and connect with the community!</p>
-                    <p style="margin-top: 10px; color: #00ff88;">📅 Every Saturday | 🕐 8:00 PM EST</p>
-                </div>
-                <div class="card event-card">
-                    <span class="event-date">Monthly</span>
-                    <h3>GTAMEN Summit</h3>
-                    <p>Monthly strategic meetings and special events. All members welcome to participate in planning and activities.</p>
-                    <p style="margin-top: 10px; color: #00ff88;">📅 First Sunday of Month | 🕐 7:00 PM EST</p>
-                </div>
-                <div class="card event-card">
-                    <span class="event-date">Special Event</span>
-                    <h3>Movie Premiere Night</h3>
-                    <p>Be part of our next movie premiere! Watch parties, behind-the-scenes content, and exclusive announcements.</p>
-                    <p style="margin-top: 10px; color: #00ff88;">📅 TBA | Check Discord</p>
-                </div>
+            <h2 class="page-title">Events</h2>
+            
+            <div class="card" style="text-align: center; padding: 50px; margin-bottom: 40px;">
+                <img src="https://i.postimg.cc/Pf4wSdYL/IMG_1700.jpg" alt="Coming Soon" style="max-width: 100%; height: auto; border-radius: 10px; border: 3px solid #00ff88; margin-bottom: 20px;">
+                <h3 style="font-size: 2.5em; margin-bottom: 15px;">Events Coming Soon</h3>
+                <p style="font-size: 1.2em; color: #aaa;">We're planning exciting community events. Stay tuned for announcements!</p>
             </div>
 
-            <div class="card" style="margin-top: 40px;">
-                <h3>How to Participate</h3>
-                <p>All events are announced in our Discord server. Make sure to join and enable notifications to never miss an event!</p>
-                <button onclick="showPage('discord')" class="cta-button" style="margin-top: 20px;">Join Discord</button>
+            <div class="grid">
+                <div class="card">
+                    <h3>📅 In Planning</h3>
+                    <p>Multiple community events are currently being organized. Event schedules and details will be announced in our Discord.</p>
+                </div>
+                <div class="card">
+                    <h3>🔔 Stay Updated</h3>
+                    <p>Join our Discord to be the first to know about upcoming events, activities, and special gatherings.</p>
+                </div>
+                <div class="card">
+                    <h3>🎯 Get Involved</h3>
+                    <p>Want to help organize events? Join our Discord to share your ideas and volunteer for event planning roles.</p>
+                </div>
             </div>
         </div>
 
@@ -563,7 +558,6 @@
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 GTAMEN - GTA V PS5 Community</p>
-            <p>GTAMEN // Alien Studios</p>
             <p style="color: #00ff88; margin-top: 15px;">Built with dedication for our community</p>
         </div>
     </footer>
