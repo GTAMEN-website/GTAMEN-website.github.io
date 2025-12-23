@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -361,7 +362,6 @@
                     <li><button onclick="showPage('home')" class="nav-btn active" data-page="home">Home</button></li>
                     <li><button onclick="showPage('about')" class="nav-btn" data-page="about">About Us</button></li>
                     <li><button onclick="showPage('movies')" class="nav-btn" data-page="movies">Movies</button></li>
-                    <li><button onclick="showPage('events')" class="nav-btn" data-page="events">Events</button></li>
                     <li><button onclick="showPage('discord')" class="nav-btn" data-page="discord">Discord</button></li>
                     <li><button onclick="showPage('lsn')" class="nav-btn" data-page="lsn">LSN</button></li>
                     <li><button onclick="showPage('summit')" class="nav-btn" data-page="summit">Summit</button></li>
@@ -430,35 +430,26 @@
         <!-- Movies Page -->
         <div id="movies" class="page-section">
             <h2 class="page-title">Movies & Trailers</h2>
-            <div class="grid">
-                <div class="card movie-card">
-                    <div class="movie-banner" style="background: linear-gradient(135deg, #0a3a2a 0%, #1a1a1a 100%); display: flex; align-items: center; justify-content: center; font-size: 2em; font-weight: bold;">GTAMEN</div>
-                    <h3>GTAMEN: The Battle of Los Santos</h3>
-                    <p>An epic action-packed film showcasing the legendary battle for control of Los Santos streets.</p>
-                    <div class="movie-info">
-                        <div>
-                            <div class="movie-time">1:32:52</div>
-                            <div class="movie-genre">Action/Movie</div>
-                        </div>
-                        <span class="status-badge">Watch Now</span>
-                    </div>
-                </div>
-                <div class="card movie-card">
-                    <div class="movie-banner" style="background: linear-gradient(135deg, #3a1a0a 0%, #1a1a1a 100%); display: flex; align-items: center; justify-content: center; font-size: 2em; font-weight: bold;">GTAMEN</div>
-                    <h3>GTAMEN: The Western World</h3>
-                    <p>The origins of GTAMEN in this gritty western style thriller. A tale of loyalty, conflict, and street justice.</p>
-                    <div class="movie-info">
-                        <div>
-                            <div class="movie-genre">Action/Movie</div>
-                        </div>
-                        <span class="status-badge status-coming">Coming Soon</span>
-                    </div>
-                </div>
+            
+            <div class="card" style="text-align: center; padding: 50px; margin-bottom: 40px;">
+                <img src="https://i.postimg.cc/Pf4wSdYL/IMG_1700.jpg" alt="Coming Soon" style="max-width: 100%; height: auto; border-radius: 10px; border: 3px solid #00ff88; margin-bottom: 20px;">
+                <h3 style="font-size: 2.5em; margin-bottom: 15px;">Movie Productions Coming Soon</h3>
+                <p style="font-size: 1.2em; color: #aaa;">We're working on exciting new cinematic projects. Stay tuned for epic GTAMEN movie productions!</p>
             </div>
 
-            <div class="card" style="margin-top: 40px; text-align: center;">
-                <h3>More Coming Soon</h3>
-                <p>We're constantly working on new productions. Stay tuned to our Discord for updates on upcoming releases, behind-the-scenes content, and casting calls for community members!</p>
+            <div class="grid">
+                <div class="card">
+                    <h3>🎬 In Development</h3>
+                    <p>Multiple movie projects are currently in pre-production. Casting calls and crew positions will be announced soon in our Discord.</p>
+                </div>
+                <div class="card">
+                    <h3>📹 Behind the Scenes</h3>
+                    <p>Follow our Discord for exclusive behind-the-scenes content, production updates, and sneak peeks at upcoming releases.</p>
+                </div>
+                <div class="card">
+                    <h3>⭐ Get Involved</h3>
+                    <p>Interested in being part of our productions? Join our Discord to learn about opportunities for actors, directors, and crew members.</p>
+                </div>
             </div>
         </div>
 
