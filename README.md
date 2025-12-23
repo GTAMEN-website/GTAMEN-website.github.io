@@ -64,7 +64,8 @@
         nav ul {
             display: flex;
             list-style: none;
-            gap: 30px;
+            gap: 15px;
+            flex-wrap: wrap;
         }
 
         nav button {
@@ -74,11 +75,12 @@
             text-decoration: none;
             text-transform: uppercase;
             font-weight: bold;
-            padding: 10px 15px;
+            padding: 10px 12px;
             transition: all 0.3s;
             cursor: pointer;
             font-family: 'Courier New', monospace;
-            font-size: 1em;
+            font-size: 0.9em;
+            white-space: nowrap;
         }
 
         nav button:hover, nav button.active {
@@ -341,9 +343,21 @@
         /* Driver Cards */
         .driver-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .driver-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .driver-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         .driver-card {
@@ -606,11 +620,11 @@
 
             <div class="card" style="margin-top: 50px; text-align: center; padding: 40px; background: linear-gradient(135deg, #1a1a1a 0%, #0a2a3a 100%);">
                 <img src="https://i.postimg.cc/bwpDkJm5/IMG_1708.png" alt="FIA Logo" style="max-width: 300px; height: auto; margin: 0 auto 20px; display: block;">
-                <h3 style="font-size: 2.2em; margin-bottom: 20px;">FIA Competition</h3>
-                <p style="font-size: 1.1em; color: #aaa; margin-bottom: 30px;">Our elite drivers competing at the highest level of Gran Turismo 7 motorsport.</p>
+                <h3 style="font-size: 2.2em; margin-bottom: 20px;">FIA</h3>
+                <p style="font-size: 1.1em; color: #aaa; margin-bottom: 30px;">Our elite drivers representing GTAMEN in FIA-sanctioned Gran Turismo 7 racing.</p>
                 
                 <h4 style="color: #00ff88; font-size: 1.5em; margin-bottom: 20px;">FIA Drivers</h4>
-                <div class="driver-grid" style="max-width: 600px; margin: 0 auto;">
+                <div class="driver-grid" style="max-width: 500px; margin: 0 auto; grid-template-columns: repeat(2, 1fr);">
                     <div class="driver-card">
                         <img src="https://i.postimg.cc/T2ND8fY2/IMG_1706.jpg" alt="Koomzy">
                         <h4>Koomzy</h4>
